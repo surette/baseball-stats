@@ -1,0 +1,41 @@
+<h1>New Player</h1>
+<%= form_for :player, url: players_path do |f| %>
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+ 
+  <p>
+    <%= f.label :avg %><br>
+    <%= f.text_field :avg %>
+  </p>
+
+  <p>
+    <%= f.label :hr %><br>
+    <%= f.text_field :hr %>
+  </p>
+
+  <p>
+    <%= f.label :rbi %><br>
+    <%= f.text_field :rbi %>
+  </p>
+
+  <p>
+    <%= f.label :runs %><br>
+    <%= f.text_field :runs %>
+  </p>
+
+  <p>
+    <%= f.label :sb %><br>
+    <%= f.text_field :sb %>
+  </p>
+
+  <p>
+    <%= f.label :ops %><br>
+    <%= f.text_field :ops %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

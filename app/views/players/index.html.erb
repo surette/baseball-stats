@@ -1,0 +1,26 @@
+<h1>Players</h1>
+ 
+<table>
+  <tr>
+    <th>Name</th>
+    <th>AVG</th>
+    <th>HR</th>
+    <th>RBI</th>
+    <th>Runs</th>
+    <th>SB</th>
+    <th>OPS</th>
+  </tr>
+ 
+  <% @players.each do |player| %>
+    <tr>
+      <td><%= player.name %></td>
+      <td><%= player.avg %></td>
+      <td><%= player.hr %></td>
+      <td><%= player.rbi %></td>
+      <td><%= player.runs %></td>
+      <td><%= player.sb %></td>
+      <td><%= player.ops %></td>
+      <td><%= link_to 'Show', player_path(player) %></td>
+    </tr>
+  <% end %>
+</table>
